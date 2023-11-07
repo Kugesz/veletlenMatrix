@@ -20,13 +20,13 @@ function initialBoard(){
 }
 
 function setRandomOrder(eredetiTomb){
-    var ujTomb = []
-    let t = eredetiTomb
+    let ujTomb = [];
+    let t = eredetiTomb.slice();
     for(let i = t.length - 1; i >= 0; i--){
         let r = veletlenSzam(0,i);
-        console.log(r, t[r]);
         ujTomb.push(t[r]);
-        t.slice(r,1);
+        t.splice(r,1);
+        console.log(t);
     }
     return ujTomb;
 }

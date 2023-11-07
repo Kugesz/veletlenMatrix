@@ -1,11 +1,26 @@
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#matrix{
+    width: 60vw;
+    height: 50vh;
+    background-color: #c2e3f4;
+    border-radius: 10px;
+}
+
 .row {
+    margin-top: 20px;
     margin-bottom: 10px;
 }
 
 
 .col-3{
-    height: calc((3 / 12) * 100vw);
-    background-color: yellow;
+    height: 150px;
+    background-color: #efb730;
     border-radius: 8px;
     display: flex;
     justify-content: center;
@@ -14,4 +29,12 @@
 
 .col-3>p{
     font-size: 40px;
+}
+
+button {
+    width: 240px;
+    background-color: #efb730;
+    border-radius: 45px;
+    padding: 20px;
+    box-shadow: 0 0 10px 5px #c2e3f4, 0 0 10px 5px #c2e3f4, 0 0 10px 5px #c2e3f4, 0 0 10px 5px #c2e3f4;
 }
